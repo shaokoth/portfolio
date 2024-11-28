@@ -1,0 +1,85 @@
+/* ------------------css for small screens */
+* {
+  /* outline: greenyellow 1px solid; */
+}
+
+nav .menu {
+  display: none;
+}
+
+#side-menu {
+  transition: right 0.4s;
+}
+
+@media only screen and (max-width: 822px) {
+  #header {
+    background-image: url(./images/phone_background.png);
+    background-color: black;
+    border-radius: 0;
+  }
+  .header-text {
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .header-text h1 {
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+  }
+  nav .menu {
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: var(--my-color);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .menu {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+
+  .sub-title {
+    font-size: 40px;
+  }
+
+  .about-col1,
+  .about-col2 {
+    flex-basis: 100%;
+  }
+
+  .about-col1 {
+    margin-bottom: 30px;
+  }
+
+  .about-col2 {
+    font-size: 14px;
+  }
+
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}
